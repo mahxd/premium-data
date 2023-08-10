@@ -1,0 +1,5 @@
+loggie:
+  reload:
+    enabled: true
+    period: 10s
+
