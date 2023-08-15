@@ -1,0 +1,4 @@
+loggie/data
+loggie/data/*
+*.log
+*.pid
