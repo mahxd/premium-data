@@ -12,4 +12,10 @@ pipelines:
       password: "pas3@132"
       #caCertPath: /certs/ca/ca.crt
       index: "${+YYYY.MM.DD}"
+    interceptors: 
+      - type: transformer
+        actions:
+          - action: regex(body)
+            pattern: (?<ip>\S+) (?<id>\S+) (?<u>\S+) (?<time>\[.*?\]) (?<url>\".*?\") (?<status>\S+) (?<size>\S+)
+  
 
